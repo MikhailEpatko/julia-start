@@ -1,0 +1,27 @@
+name: open PR
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [ "main" ]
+
+concurrency:
+  group: main
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    needs: verify
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v5
+      - name: set up JDK
+        uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          distribution: 'liberica'
+          cache: gradle
+      - name: run the Gradle check task
+        run: ./gradlew check
