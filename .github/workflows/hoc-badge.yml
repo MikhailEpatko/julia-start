@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: MikhailEpatko/hoc-badge-action@v3.2.1
         with:
-          dir: .
-          since: 2000-01-01
+          dir: ./src
+          since: 2025-11-08
           output_dir: hoc-badge
       - uses: peaceiris/actions-gh-pages@v4.0.0
         with:
