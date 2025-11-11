@@ -1,12 +1,12 @@
 package ru.julia.start
 
 fun main() {
-    val name = "Marry"
-    val age = 20
-    
-    val name2 = "My name is $name. And I'm $age years old"
-    println(name2)
+    val greenNumbers = listOf(1, 4, 23)
+    val redNumbers = listOf(17, 2)
+
+    val greenNumbers2 = greenNumbers.size
+    val redNumbers2 = redNumbers.size
+    val greenNumbers3 = greenNumbers2.plus(redNumbers2)
+
+    println(greenNumbers3)
 }
-// Нужно дописать код, чтобы он выводил в консоль:
-// My name is Marry. And I'm 20 years old.
-// Подсказка: код должен подставлять значения переменных name и age в шаблон строки.
