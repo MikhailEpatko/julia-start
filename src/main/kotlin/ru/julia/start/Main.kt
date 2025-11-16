@@ -1,12 +1,25 @@
 package ru.julia.start
 
 fun main() {
-    val name = "Marry"
-    val age = 20
-    
-    val name2 = "My name is $name. And I'm $age years old"
-    println(name2)
-}
-// Нужно дописать код, чтобы он выводил в консоль:
-// My name is Marry. And I'm 20 years old.
-// Подсказка: код должен подставлять значения переменных name и age в шаблон строки.
+    val alphabets=("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
+    val button = alphabets
+    if (button == "A") {
+        println("Yes")
+    } else if (button == "B") {
+        println("No")
+    } else if (button == "X") {
+        println("Menu")
+    } else if (button == "Y") {
+        println("Nothing")
+    } else {
+        println("Error: There is no such button")
+    }
+//button - это кнопка, которую пользователь нажал на контроллере (джойстике, клавиатуре).
+//По нажатию на кнопку, код должен выводить в консоль соответствующий ей ответ или ошибку, если драйвер про такую кнопку ничего не знает.
+//
+//Кнопка - Ответ
+//A - "Yes"
+//B - "No"
+//X - "Menu"
+//Y - "Nothing"
+//Любая другая - "Error: There is no such button"
