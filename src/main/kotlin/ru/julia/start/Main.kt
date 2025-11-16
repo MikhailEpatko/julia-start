@@ -1,12 +1,13 @@
 package ru.julia.start
 
+import kotlin.random.Random
+
 fun main() {
-    val name = "Marry"
-    val age = 20
-    
-    val name2 = "My name is $name. And I'm $age years old"
-    println(name2)
+    val firstResult = Random.nextInt(6)
+    val secondResult = Random.nextInt(6)
+    if (firstResult == secondResult) {
+        println("Вы победили!")
+    } else {
+        println("Не в этот раз...")
+    }
 }
-// Нужно дописать код, чтобы он выводил в консоль:
-// My name is Marry. And I'm 20 years old.
-// Подсказка: код должен подставлять значения переменных name и age в шаблон строки.
