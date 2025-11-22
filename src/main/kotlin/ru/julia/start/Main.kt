@@ -1,12 +1,11 @@
 package ru.julia.start
 
 fun main() {
-    val name = "Marry"
-    val age = 20
-    
-    val name2 = "My name is $name. And I'm $age years old"
-    println(name2)
+//    val words = listOf("dinosaur", "limousine", "magazine", "language")
+//    val letter = words.filter { words -> words.contains("l") }
+//    println(letter)
+    val words = listOf("dinosaur", "limousine", "magazine", "language")
+    val res = words.filterIndexed { index, value -> index != 0 && value.startsWith('l') }
+//        (words[0].startsWith("l"))
+    println(res)
 }
-// Нужно дописать код, чтобы он выводил в консоль:
-// My name is Marry. And I'm 20 years old.
-// Подсказка: код должен подставлять значения переменных name и age в шаблон строки.
