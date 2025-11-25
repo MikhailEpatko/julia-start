@@ -12,14 +12,13 @@ fun main() {
         }
         println()
     }
-    val m = 5
-    for (l in 4 downTo 1){
-        for (t in m - l downTo 1){
+    for (l in 4 downTo 1) {
+        for (t in n - l downTo 1) {
             print(" ")
         }
-        for (s in l downTo 1 ){
+        for (s in l downTo 1) {
             print("* ")
-    }
+        }
         println()
-}
     }
+}
