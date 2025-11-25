@@ -1,14 +1,13 @@
 package ru.julia.start
 
 fun main() {
-     val height=5
-    for (i in height downTo 1) {
-        if(i<5)
-            print("")
-
-        for (y in 1..i) {
+         for (i in 1..5) {
+        for (y in 1..5-i) {
+            print(" ")
+        }
+        for (k in 1..2*i-1){
             print("*")
-                    }
+        }
         println()
     }
 }
