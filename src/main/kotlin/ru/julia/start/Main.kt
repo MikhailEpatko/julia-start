@@ -6,7 +6,7 @@ fun main() {
     intervalInSeconds(1, 20, 15)
     intervalInSeconds(minutes = 1, seconds = 25)
     intervalInSeconds(2)
-    intervalInSeconds(minutes= 10, 0)
+    intervalInSeconds(minutes= 10)
     intervalInSeconds(hours=1,seconds= 1)
 }
 
