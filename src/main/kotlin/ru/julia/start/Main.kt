@@ -14,7 +14,6 @@ fun intervalInSeconds(
     hours: Int = 0
     minutes: Int =0
     seconds: Int = 0
-)Int=(hours * 60) + minutes) * 60 + seconds))
-
+)Int=(hours * 60) + minutes) * 60 + seconds){
+    println(intervalInSeconds())
 }
-    (
