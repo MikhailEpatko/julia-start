@@ -1,5 +1,10 @@
 package ru.julia.start
 
-fun main() {
-    println("main")
+fun createUrl(
+    prefix: String="https://example.com/book-info",
+    id:Int =5,
+    actions: List<String> = listOf("title", "year", "author"),
+):{
+
 }
+
