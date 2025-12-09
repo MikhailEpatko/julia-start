@@ -3,14 +3,16 @@ package ru.julia.start
 import jdk.javadoc.internal.doclets.formats.html.markup.HtmlStyle
 
 fun main() {
-    println(prefix = "https://example.com/book-info", id = 5, actions = listOf("title", "year", "author"))
+    println(createUrl(actions = "title"))
+    println(createUrl(actions = "year"))
+    println(createUrl(actions = "author"))
 }
 
 fun createUrl(
     prefix: String = "https://example.com/book-info",
     id: Int = 5,
-    actions: List<String> = listOf("title", "year", "author"),
+    actions: String = "",
 ): String {
     val res = "$prefix/$id/$actions"
-    return (res)
+    return res
 }
