@@ -1,7 +1,5 @@
 package ru.julia.start
 
-import jdk.javadoc.internal.doclets.formats.html.markup.HtmlStyle
-
 fun main() {
     println(createUrl(actions = "title"))
     println(createUrl(actions = "year"))
