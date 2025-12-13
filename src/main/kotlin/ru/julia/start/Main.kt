@@ -1,5 +1,16 @@
 package ru.julia.start
 
 fun main() {
-    println("main")
+    repeatN(5) {
+        println("Привет")
+    }
+}
+
+fun repeatN(
+    n: Int,
+    action: () -> Unit,
+) {
+    repeat(n) {
+        action()
+    }
 }
