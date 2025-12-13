@@ -10,7 +10,7 @@ fun repeatN(
     n: Int,
     action: () -> Unit,
 ) {
-    for (action in 1..n) {
+    repeat(n) {
         action()
     }
 }
