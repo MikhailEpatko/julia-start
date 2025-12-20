@@ -1,17 +1,17 @@
 package ru.julia.start
 
 fun main() {
-    evenNumberCount(listOf<Int>(0, 1, 2, 3, 4))
-    evenNumberCount(listOf<Int>(0))
-    evenNumberCount(listOf<Int>(1, 3))
+    println(evenNumberCount(listOf<Int>(0, 1, 2, 3, 4)))
+    println(evenNumberCount(listOf<Int>(0)))
+    println(evenNumberCount(listOf<Int>(0, 3)))
 }
 
 fun evenNumberCount(numbers: List<Int>): Int {
-    for (a in numbers) {
-        if (a % 2 == 0) {
-            val b: Int = a.sum()
-            println(b)
+    var a = 0
+    for (b in numbers) {
+        if (b % 2 == 0 && b != 0) {
+            a++
         }
     }
-    return 0
+    return a
 }
