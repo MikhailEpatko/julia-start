@@ -5,6 +5,7 @@ fun main() {
     println(separateNumbers(listOf(0)))
     println(separateNumbers(listOf(3, 1)))
     println(separateNumbers(listOf(1, 2)))
+    println(separateNumbers(listOf()))
 }
 
 fun separateNumbers(numbers: List<Int>): List<Int> {
