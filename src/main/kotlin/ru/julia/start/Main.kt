@@ -11,7 +11,7 @@ fun separateNumbers(numbers: List<Int>): List<Int> {
     val listone = mutableListOf<Int>()
     val listtwo = mutableListOf<Int>()
     for (number in numbers) {
-        if (number % 2 == 0 && ) {
+        if (number % 2 == 0 && number != 0) {
             listone.add(number)
         } else {
             listtwo.add(number)
