@@ -1,14 +1,16 @@
 package ru.julia.start
 
 fun main() {
-    println(separateNumbers(mutableListOf(0, 4, -3, 3, 1, -6, -5, 0, -2)))
+    println(separateNumbers(listOf(0, 4, -3, 3, 1, -6, -5, 0, -2)))
 }
 
 fun separateNumbers(numbers: List<Int>): List<Int> {
     val listone = mutableListOf<Int>()
     for (number in numbers) {
         if (number < 0) {
-            -number
+            listone.add(-number)
+        } else {
+            listone.add(number)
         }
     }
     return listone
