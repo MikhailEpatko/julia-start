@@ -1,7 +1,7 @@
 package ru.julia.start
 
 fun main() {
-    println(separateNumbers(listone))
+    println(separateNumbers(mutableListOf(0, 4, -3, 3, 1, -6, -5, 0, -2)))
 }
 
 fun separateNumbers(numbers: List<Int>): List<Int> {
