@@ -19,4 +19,6 @@ class MainTest {
             assertEquals(expected, makePositive(numbers))
         }
     }
+
+    private fun makePositive(numbers: List<Int>): List<Int> = numbers.map { if (it < 0) -it else it }
 }
