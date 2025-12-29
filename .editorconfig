@@ -5,7 +5,7 @@ ktlint_code_style = ktlint_official
 insert_final_newline = false
 max_line_length = 120
 ktlint_standard_no-empty-first-line-in-class-body = disabled
-ktlint_standard_no-trailing-spaces = enabled
+ktlint_standard_no-trailing-spaces = disabled
 ktlint_standard_no-wildcard-imports = enabled
 ktlint_standard_property-naming = enabled
 ktlint_standard_indent = enabled
@@ -48,6 +48,8 @@ ktlint_standard_paren-spacing = enabled
 ktlint_standard_range-spacing = enabled
 ktlint_standard_spacing-between-function-name-and-opening-parenthesis = enabled
 ktlint_standard_unary-op-spacing = enabled
+ktlint_standard_when-entry-bracing = disabled
+ktlint_standard_mixed-condition-operators = disabled
 
 ij_kotlin_packages_to_use_import_on_demand = unset
 ij_kotlin_allow_trailing_comma = true
