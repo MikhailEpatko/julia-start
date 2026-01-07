@@ -1,7 +1,7 @@
 package ru.julia.start
 
 fun main() {
-    println("123->${flipTheNumber(123)}")
+    println(flipTheNumber(input:Int= 123):{}")
     println("322)->${flipTheNumber(322)"}
     println(1)
     println(0)
