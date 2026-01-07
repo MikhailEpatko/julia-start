@@ -8,7 +8,7 @@ fun flipTheNumber(input: Int): Int {
     var lastNumber = 0
 
     if (number > 0) {
-        lastNumber = lastNumber * 10 + (number % 10)
+        lastNumber = (lastNumber * 10) + (number % 10)
         number /= 10
     } else {
     }
