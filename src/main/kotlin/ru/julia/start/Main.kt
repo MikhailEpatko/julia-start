@@ -1,12 +1,7 @@
 package ru.julia.start
 
 fun main() {
-    println(flipTheNumber(123))
-    println(flipTheNumber(322))
-    println(flipTheNumber(1))
-    println(flipTheNumber(0))
-    println(flipTheNumber(3412))
-    println(flipTheNumber(701118291))
+    println("main")
 }
 
 fun flipTheNumber(input: Int): Int {
