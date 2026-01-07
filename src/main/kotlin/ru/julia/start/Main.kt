@@ -1,5 +1,7 @@
 package ru.julia.start
 
 fun main() {
-    println("main")
+}
+
+fun flipTheNumber(input: Int): Int {
 }
