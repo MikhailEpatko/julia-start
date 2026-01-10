@@ -1,7 +1,7 @@
 package ru.julia.start
 
 fun main() {
-    println("main")
+    println(countWords(" qwe aa aaaa xxxxx y x xxx "))
 }
 
 fun countWords(input: String): Int {
@@ -16,13 +16,17 @@ fun countWords(input: String): Int {
             ' ', '\n', '\t' -> {
                 if (inWord) {
                     counter++
+                    inWord = false
                 }
-                inWord = false
-            }
-        } else ->{
-            if(!inWord){
-                inWord = true
+            } else -> {
+                if (!inWord) {
+                    inWord = true
+                }
             }
         }
     }
+    if (inWord) {
+        counter++
+    }
+    return counter
 }
